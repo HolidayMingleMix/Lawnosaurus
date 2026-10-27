@@ -1,0 +1,274 @@
+h1 {color: DarkGreen;
+}
+
+h2 {
+	color: Black;
+}
+
+body {
+	margin: 0;
+	min-height: 1200px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	isolation: isolate;
+}
+body::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	width: 100%;
+	min-height: 100vh;
+	opacity: .3;
+	background-image: url(../images/T-Rex4.jpg);
+	background-position: center;
+	background-size: cover;
+	
+}
+
+.osProfile {
+	display: grid;
+	place-content: left;
+	text-align: left;
+	min-height: 500px;
+}
+p{
+	font-size: 1.4rem;
+}
+.nav {
+	postition: absolute;
+    overflow: hidden;
+    background-color: #333;
+	z-index: 9;
+}
+
+.nav a {
+	float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: #333;
+    color: #fd5e53;
+}
+.Lawn_logo {
+	position: absolute;
+	z-index: 10;
+	width: 80px;
+	height:80px;
+	top: 60px;
+	right: 105px;
+}
+.Lawn_logo img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	display: block;
+	
+}
+.logo-title {
+	position: absolute
+    top: 0px;
+    right: 0px;
+    color: #1b4332;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-tagline {
+	position: absolute
+    top: 0px;
+    right: 0px;
+    color: green; 
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+}
+.ph_number {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: lightblack;
+}
+.menu-btn {
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 21px;
+	position: absolute;
+	width: 35px;
+	top: 20px;
+	right: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	display: none;
+}
+.bar {
+	width: 100%;
+	height: 3px;
+	background-color: white;
+	border-radius: 2px;
+}
+.promo {
+	color: #fd5e53;
+	font-weight: bold;
+}
+@media screen and (max-width: 670px) {
+	.Lawn_logo {
+		position: absolute;
+		z-index: 10;
+		width: 30px;
+		height:30px;
+		top: 50px;
+		right: 105px;
+}
+	.Lawn_logo img {
+		width:100%;
+		height:100%;
+		object-fit: cover;
+		display: block;
+	}
+	.logo-title {
+		position: absolute
+		top: 0px;
+		right: 0px;
+		color: #1b4332;
+		font-size: .5rem;
+		letter-spacing: 2px;
+		margin: 0;
+		line-height: 1;
+	}
+
+	.logo-tagline {
+		position: absolute
+		top: 0px;
+		right: 0px;
+		color: green; 
+		font-size: 0.3rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin: 5px 0 0 0;
+	}
+	.ph_number {
+		margin: 0;
+		font-size: 0.3rem;
+		font-weight: bold;
+		color: lightblack;
+		
+	}
+	.nav {
+		padding: 0;
+		max-height: 48px;
+	}
+	.nav {
+	postition: absolute;
+    overflow: hidden;
+    background-color: #333;
+	}
+	.nav a {
+	float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	}
+	.menu-btn {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 21px;
+		position: absolute;
+		width: 35px;
+		top: 20px;
+		right: 30px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+	}
+	.profile h1 {
+		display: none;
+	}
+	.profile h2 {
+		padding-top: 100px;
+	}
+	h1 {
+		color: DarkGreen;
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		color: Black;
+		font-size: 1.0rem;
+		top: 300px;
+	}
+	p {
+		font-size: .9rem;
+}
+@media screen and (max-width: 340px) {
+	.Lawn_logo {
+		position: absolute;
+		z-index: 10;
+		width: 30px;
+		height:30px;
+		top: 50px;
+		right: 105px;
+		display: none;
+	}
+	.Lawn_logo img {
+		width:100%;
+		height:100%;
+		object-fit: cover;
+		display: none;
+	}
+	.logo-title {
+		position: absolute
+		top: 0px;
+		right: 0px;
+		color: #1b4332;
+		font-size: .5rem;
+		letter-spacing: 2px;
+		margin: 0;
+		line-height: 1;
+		display: none;
+	}
+
+	.logo-tagline {
+		position: absolute
+		top: 0px;
+		right: 0px;
+		color: green; 
+		font-size: 0.3rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin: 5px 0 0 0;
+		display: none;
+	}
+	.ph_number {
+		margin: 0;
+		font-size: 0.3rem;
+		font-weight: bold;
+		color: lightblack;
+		display: none;
+		}
+}	

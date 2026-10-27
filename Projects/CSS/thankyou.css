@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	min-height: 600px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	isolation: isolate;
+}
+body::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	width: 100%;
+	min-height: 100vh;
+	opacity: .3;
+	background-image: url(../images/T-Rex6.jpg);
+	background-position: center;
+	background-size: cover;
+}

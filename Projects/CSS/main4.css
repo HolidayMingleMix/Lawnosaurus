@@ -1,0 +1,217 @@
+
+
+.backImages {
+	margin: 0;
+	min-height: 1200px;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	isolation: isolate;
+}
+.backImages::after {
+	content: '';
+	position: absolute;
+	width: 100%:
+	z-index: -1;
+	margin: 0;
+	inset: 0;
+	opacity: .3;
+	background-image: url(../images/T-Rex3.jpg);
+	background-position: center;
+	background-size: cover;
+	max-width: 1950px;
+}	
+.Lawn_logo {
+	position: absolute;
+	z-index: 10;
+	width: 80px;
+	height:80px;
+	top: 60px;
+	right: 105px;
+}
+.Lawn_logo img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	display: block;
+}
+.logo-title {
+	position: absolute
+    top: 0px;
+    right: 0px;
+    color: #1b4332;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1;
+}
+
+.logo-tagline {
+	position: absolute
+    top: 0px;
+    right: 0px;
+    color: green; 
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+}
+.ph_number {
+	margin: 0;
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: lightblack;
+	
+}
+
+.nav {
+	postition: absolute;
+    overflow: hidden;
+    background-color: #333;
+	z-index: 9;
+}
+
+.nav a {
+	float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.nav a.active {
+    background-color: #333;
+    color: #fd5e53;
+}
+
+.profile {
+	position: absolute;
+	z-index: 5;
+	top: 5%;
+	left: 0px;
+	margin: 0;
+	
+}
+.profile h1 {
+	word-break: break-word;
+	color: Red;
+}
+.profile h2 {
+	padding-top: 50px;
+}
+body {
+	margin: 0;
+}
+.menu-btn {
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 21px;
+	position: absolute;
+	width: 35px;
+	top: 20px;
+	right: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	display: none;
+}
+.bar {
+	width: 100%;
+	height: 3px;
+	background-color: white;
+	border-radius: 2px;
+}
+@media screen and (max-width: 840px) {
+	.Lawn_logo {
+		position: absolute;
+		z-index: 10;
+		width: 50px;
+		height:50px;
+		top: 50px;
+		right: 105px;
+}
+	.Lawn_logo img {
+		width:100%;
+		height:100%;
+		object-fit: cover;
+		display: block;
+	}
+	.logo-title {
+		position: absolute
+		top: 0px;
+		right: 0px;
+		color: #1b4332;
+		font-size: 1rem;
+		letter-spacing: 2px;
+		margin: 0;
+		line-height: 1;
+	}
+
+	.logo-tagline {
+		position: absolute
+		top: 0px;
+		right: 0px;
+		color: green; 
+		font-size: 0.5rem;
+		font-weight: bold;
+		letter-spacing: 1px;
+		margin: 5px 0 0 0;
+	}
+	.ph_number {
+		margin: 0;
+		font-size: 0.5rem;
+		font-weight: bold;
+		color: lightblack;
+		
+	}
+}
+@media screen and (max-width: 850px) {
+	.nav {
+		padding: 0;
+		max-height: 48px;
+	}
+	.nav {
+	postition: absolute;
+    overflow: hidden;
+    background-color: #333;
+	}
+	.nav a {
+	float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	}
+	.menu-btn {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 21px;
+		position: absolute;
+		width: 35px;
+		top: 20px;
+		right: 30px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+	}
+	.profile h1 {
+		display: none;
+	}
+	.profile h2 {
+		padding-top: 100px;
+	}
+}
