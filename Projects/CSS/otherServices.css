@@ -29,6 +29,11 @@ body::after {
 	
 }
 
+.output img{
+	z-index: 200;
+	max-width: 500px;
+}
+
 .osProfile {
 	display: grid;
 	place-content: left;
