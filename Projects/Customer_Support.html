@@ -8,56 +8,86 @@
         <link rel='stylesheet' href='css/customersupport.css'>
 	</head>
 	<body>
-		<div class="nav">
-			<a class="active" href="HomePage4.html">Home</a>
-			<a href="Customer_Support.html">Contact</a>
-			<a href="Other_Services.html">Other Services</a>
-			<a href="About.html">About</a>
-			<button class="menu-btn">
-				<div class="bar"></div>
-				<div class="bar"></div>
-				<div class="bar"></div>
-		</button>
-		</div>
-		<h2>Please Call <strong>321-321-321</strong> for a Free Quote!!</h2>
+		<section class="navBar">
+			<div class="nav">
+				<a class="active" href="HomePage4.html">Home</a>
+				<a href="Customer_Support.html">Contact</a>
+				<a href="Other_Services.html">Other Services</a>
+				<a href="About.html">About</a>
+				<button class="menu-btn">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+			</button>
+			</div>
+		</section>
 		
-		<div class="questions" align="center">
+		<section class="contact">
+			<div class="quote">
+				<h2>Please Call <strong>321-321-321</strong> for a Free Quote!!</h2>
+			</div>
+		</section>
 		
-		  
-				
-			<p><b>Questions or Concerns:</b></p>
-			<form action="thankyou.html">
+		<section class="faq_section">
+			<h2 class="faq_title">Frequently Asked Questions</h2>
+			<div class="faq">
+				<button class ="faq_question">
+					What is included in a standard mow?
+					<span class="icon">+</span>
+				</button>
+				<div class="faq_answer">
+					<p>Standard mowing includes precision grass cutting, string trimming (weed eating)
+					   around obstacles and fences, edging along hard surfaces (sidewalks and driveways), 
+					   and blowing clippings off all paved areas.</p>
+				</div>
+			</div>
+			<div class="faq">
+				<button class ="faq_question">
+					How much do you charge?
+					<span class="icon">+</span>
+				</button>
+				<div class="faq_answer">
+					<p>Pricing is based on property size, layout, and how often service is performed. Most 
+					   residential services start at a baseline rate (typically calculated by time or square
+					   footage, aiming for at least $1 per minute or $60 per hour).</p>
+				</div>
+			</div>	
+			<div class="faq">
+				<button class ="faq_question">
+					Do I need to be home for service?
+					<span class="icon">+</span>
+				</button>
+				<div class="faq_answer">
+					<p>No, as long as your gates are unlocked, pets are safely inside, and the yard is clear
+					   of toys, furniture, and pet waste.</p>
+				</div>
+				<script src="scripts/faq.js"></script>	
+			</div>	
 			
-				</table>
-					
-					<table class="table2" align="left">
-					<tr>
-						<td align="right"> User Email:</td>
-						<td colspan="3"><input type="text" name="uid" size="35px"></td>
-						
-						</td>
-					</tr>
-					
-					<tr>
-						<td>Please submit your questions or concerns below:</td>
-						<td colspan="4">
-							<textarea name="concerns" rows="6" cols="35px"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<td></td>
-						<td colspan="1"><input type="submit" value="Submit"></td>
-					</tr>	
-							
-				</table>
-		</div>
-		<div class="Lawn_logo">
-			<img src="images/logo.jpg" alt="Lawnosaurus Character Illustration">
-				  <h1 class="logo-title">LAWNOSAURUS</h1>
-				  <p class="logo-tagline">LANDSCAPING & LAWN CARE</p>
-				  <p class="ph_number">321-321-321<p>
+
+			<div class="questions" align="center">		
+				<p><b>Questions or Concerns:</b></p>
+					<form onsubmit="return validateForm()" action="thankyou.html">
+					 <div class="formContainer">
+						<input type="text" id="email" placeholder="Email"><br>
+						<textarea id="concerns" rows="9" cols="75px" placeholder="Comments or Concerns"></textarea><br>
+						<button type="submit">Submit</button>
+					 </div>
+					</form>
+					<p id="formMessage"></p>
+				<script src="scripts/validation.js"></script>
+			</div>
+		</section>
 		
-		</div>
+		<section class="Lawn_logo">
+			<div class="logo">
+				<img src="images/logo.jpg" alt="Lawnosaurus Character Illustration">
+					  <h1 class="logo-title">LAWNOSAURUS</h1>
+					  <p class="logo-tagline">LANDSCAPING & LAWN CARE</p>
+					  <p class="ph_number">321-321-321<p>
+			
+			</div>
+		</section>
 		
 	</body>
 </html>

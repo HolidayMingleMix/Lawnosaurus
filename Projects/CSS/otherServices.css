@@ -1,13 +1,118 @@
-h1 {color: DarkGreen;
+.osProfile1 {
+	padding: 22px 24px;
+	
+	color: red;
+	font-size: 17px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	display: block;
+	opacity: .9;
+	max-width: 600px;
+	text-align: center;
+	margin: 0 auto;
 }
-
-h2 {
-	color: Black;
+.container1 {
+    display: flex;            
+    justify-content: center;  
+    gap: 20px;                
+    flex-wrap: wrap;          
+    margin: 50px auto;        
 }
-
+.osProfile2 {
+	font-size: 22px;
+	padding: 15px 10px;
+	border: 1px solid  #d1d5db;
+	border-radius: 8px;
+	background-color: #333;
+	box-shadow: 0 2px 4px rgba(0,0,0,.05);
+	display: inline-block;
+	flex-wrap: wrap;
+	color: #F1C40F;
+	text-align: center;
+	max-width: 600px;
+	opacity: .9;
+	margin: 0 auto;
+}
+.osProfile3 {
+	font-size: 22px;
+	padding: 15px 10px;
+	border: 1px solid  #d1d5db;
+	border-radius: 8px;
+	background-color: #333;
+	box-shadow: 0 2px 4px rgba(0,0,0,.05);
+	display: inline-block;
+	flex-wrap: wrap;
+	color: #86EFAC;
+	font-weight: bold;
+	text-align: center;
+	max-width: 600px;
+	opacity: .9;
+	margin: 0 auto;
+}
+.container2 {
+    display: flex;            
+    justify-content: center;  
+    gap: 20px;                
+    flex-wrap: wrap;          
+    margin: 50px auto;        
+}
+.osProfile4 {
+	color: #86EFAC;
+	padding: 1px 1px;
+	font-size: 18px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0,0,0,.1);
+	max-width: 600px;
+	background-color: #333;
+	display: inline-block;
+	text-align: center;
+	opacity: .9;
+	margin: 0px auto;
+}
+.osProfile5 {
+	color: #F1C40F;
+	padding: 5px 1px;
+	font-size: 18px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0,0,0,.1);
+	max-width: 600px;
+	background-color: #333;
+	display: inline-block;
+	text-align: center;
+	opacity: .9;
+	margin: 10px auto;
+}
+.promos {
+	color: #86EFAC;
+	padding: 15px 10px;
+	font-size: 12px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0,0,0,.1);
+	max-width: 600px;
+	background-color: #333;
+	display: block;
+	align-items: center;
+	opacity: .9;
+	margin: 10px auto;
+}
+.num {
+	color: #E0E0E0;
+}
+.promoHeading {
+	margin: auto;
+	color: RED;
+}
+.promoOffer {
+	color: #86EFAC;
+	
+	margin: 10px auto;
+}
 body {
+	font-family: Arial, sans-serif;
 	margin: 0;
-	min-height: 1200px;
+	min-height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -26,7 +131,24 @@ body::after {
 	background-image: url(../images/T-Rex4.jpg);
 	background-position: center;
 	background-size: cover;
-	
+}
+.output img{
+	z-index: 200;
+	max-width: 500px;
+	align-items: center;
+}
+.photoGallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	border: 1px solid black;
+	max-width: 650px;
+	background-color: #333;
+	box-shadow: 0 4px 6px rgba(0,0,0,.1);
+	opacity: .9;
+	margin: 0 auto;
+	color: #fd5e53;
 }
 
 .osProfile {
@@ -35,8 +157,20 @@ body::after {
 	text-align: left;
 	min-height: 500px;
 }
-p{
-	font-size: 1.4rem;
+.qdescription {
+	font-size: 16px;
+	color: #E0E0E0;
+	padding: 5px 10px;
+	font-size: 18px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	box-shadow: 0 20px 20px rgba(0,0,0,.1);
+	max-width: 600px;
+	background-color: #333;
+	display: block;
+	opacity: .9;
+	margin: 0 auto;
+	
 }
 .nav {
 	postition: absolute;
@@ -131,101 +265,7 @@ p{
 	color: #fd5e53;
 	font-weight: bold;
 }
-@media screen and (max-width: 670px) {
-	.Lawn_logo {
-		position: absolute;
-		z-index: 10;
-		width: 30px;
-		height:30px;
-		top: 50px;
-		right: 105px;
-}
-	.Lawn_logo img {
-		width:100%;
-		height:100%;
-		object-fit: cover;
-		display: block;
-	}
-	.logo-title {
-		position: absolute
-		top: 0px;
-		right: 0px;
-		color: #1b4332;
-		font-size: .5rem;
-		letter-spacing: 2px;
-		margin: 0;
-		line-height: 1;
-	}
-
-	.logo-tagline {
-		position: absolute
-		top: 0px;
-		right: 0px;
-		color: green; 
-		font-size: 0.3rem;
-		font-weight: bold;
-		letter-spacing: 1px;
-		margin: 5px 0 0 0;
-	}
-	.ph_number {
-		margin: 0;
-		font-size: 0.3rem;
-		font-weight: bold;
-		color: lightblack;
-		
-	}
-	.nav {
-		padding: 0;
-		max-height: 48px;
-	}
-	.nav {
-	postition: absolute;
-    overflow: hidden;
-    background-color: #333;
-	}
-	.nav a {
-	float: left;
-    color: #333;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-	}
-	.menu-btn {
-		display: block;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 21px;
-		position: absolute;
-		width: 35px;
-		top: 20px;
-		right: 30px;
-		background: transparent;
-		border: none;
-		cursor: pointer;
-		padding: 0;
-	}
-	.profile h1 {
-		display: none;
-	}
-	.profile h2 {
-		padding-top: 100px;
-	}
-	h1 {
-		color: DarkGreen;
-		font-size: 1.5rem;
-	}
-
-	h2 {
-		color: Black;
-		font-size: 1.0rem;
-		top: 300px;
-	}
-	p {
-		font-size: .9rem;
-}
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 1000px) {
 	.Lawn_logo {
 		position: absolute;
 		z-index: 10;
@@ -271,4 +311,38 @@ p{
 		color: lightblack;
 		display: none;
 		}
+@media screen and (max-width: 670px) {
+	.nav {
+		padding: 0;
+		max-height: 48px;
+	}
+	.nav {
+	postition: absolute;
+    overflow: hidden;
+    background-color: #333;
+	}
+	.nav a {
+	float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+	}
+	.menu-btn {
+		display: block;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 21px;
+		position: absolute;
+		width: 35px;
+		top: 20px;
+		right: 30px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+	}
+
 }	

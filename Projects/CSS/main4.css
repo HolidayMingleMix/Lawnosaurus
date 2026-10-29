@@ -1,27 +1,26 @@
-
-
-.backImages {
+body {
+	font-family: Arial, sans-serif;
 	margin: 0;
-	min-height: 1200px;
+	min-height: 100vh;
 	width: 100%;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
 	isolation: isolate;
 }
-.backImages::after {
+body::after {
 	content: '';
 	position: absolute;
-	width: 100%:
 	z-index: -1;
-	margin: 0;
 	inset: 0;
+	width: 100%;
+	min-height: 100vh;
 	opacity: .3;
 	background-image: url(../images/T-Rex3.jpg);
 	background-position: center;
 	background-size: cover;
-	max-width: 1950px;
-}	
+}
 .Lawn_logo {
 	position: absolute;
 	z-index: 10;
@@ -90,26 +89,74 @@
     background-color: #333;
     color: #fd5e53;
 }
-
-.profile {
-	position: absolute;
-	max-width: 750px;
-	z-index: 5;
-	top: 5%;
-	left: 0px;
-	margin: 0;
-	
+.descript {
+	display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;
 }
-.profile h1 {
+.core {
+	display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;
+}
+.listhead {
+	color: Green;
+}
+.story p{
+	padding: 16px 24px;
+	border: 1px solid #d1d5db;
+	border-radius: 8px;
+	background-color: #333;
+	max-width: 700px;
+	color: #F1C40F ;
+	font-size: 18px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+	display: block;
+	opacity: .9;
+	margin: 0px auto;
+	margin: 5px auto;
+}
+.roar {
 	word-break: break-word;
 	color: Red;
+	font-size: 24px;
+	font-weight: bold;
+	display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;
+	margin-top: 125px;
 }
-.profile h2 {
-	padding-top: 50px;
-	max-width: 750;
+.core {
+	margin: 5px auto;
 }
-body {
+ul{
+	padding: 20px;
+	border: 2px solid #d1d5db;
+	border-radius: 8px;
+	background-color: #333;
+	max-width: 400px;
+	margin: 20px auto;
+	color: #F1C40F;
+	opacity: .9;
+}
+.list {
+	display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    align-items: center;
+}
+.list ul {
 	margin: 0;
+	padding-left: 20px;
+}
+.list li {
+	margin-bottom: 8px;
+}
+.list li:last-child {
+	margin-bottom: 0;
 }
 .menu-btn {
 	z-index: 999;
@@ -209,11 +256,4 @@ body {
 		border: none;
 		cursor: pointer;
 		padding: 0;
-	}
-	.profile h1 {
-		display: none;
-	}
-	.profile h2 {
-		padding-top: 100px;
-	}
 }

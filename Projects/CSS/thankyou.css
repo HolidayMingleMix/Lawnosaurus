@@ -20,3 +20,18 @@ body::after {
 	background-position: center;
 	background-size: cover;
 }
+.thankyou {
+	font-size: 22px;
+	padding: 15px 10px;
+	border: 1px solid  #d1d5db;
+	border-radius: 8px;
+	background-color: #333;
+	box-shadow: 0 2px 4px rgba(0,0,0,.05);
+	display: inline-block;
+	flex-wrap: wrap;
+	color: #F1C40F;
+	text-align: left;
+	max-width: 600px;
+	opacity: .9;
+	margin: 0 auto;
+}
